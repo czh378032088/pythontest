@@ -1,0 +1,16 @@
+
+<table border="1">
+    <tr>
+        {% for con in columnames %}
+            <td>{{con}}</td>
+        {% endfor %}
+    </tr>
+    {% for cons in content %}
+        <tr>
+            {% for con in cons %}
+                <td>{{con}}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</table>
+    
