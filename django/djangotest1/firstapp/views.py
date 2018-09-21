@@ -35,3 +35,9 @@ def get_table(request):
     context['content'] = ret
     #print(ret)
     return render(request,"showtable.html",context)
+	
+def form_test(request):
+	return render(request,'form.html')
+	
+def post_form(request):
+	return render(request,'form.html')

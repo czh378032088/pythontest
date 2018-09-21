@@ -27,18 +27,18 @@ def listen_thread(args):
 def connect_threead(args):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     time.sleep(2)
-    s.connect(('127.0.0.1',8011))
+    s.connect(('47.104.136.139',80))
     print('socket已经链接')
     for i in range(1000):
         s.send((str(i) + '\n').encode('utf-8'))
         time.sleep(0.001)
     s.close()
 
-t1 = Thread(target=listen_thread,args=('thread1',))
+#t1 = Thread(target=listen_thread,args=('thread1',))
 t2 = Thread(target=connect_threead,args=('thread2',))
-t1.start()
+#t1.start()
 t2.start()
-t1.join()
+#t1.join()
 t2.join()
 
 

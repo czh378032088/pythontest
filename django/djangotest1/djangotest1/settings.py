@@ -25,7 +25,7 @@ SECRET_KEY = '9@x(+ps75yco3a1yk_=^#-^4@nq@h)e4%yeqw$=n^94&tnbh-3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['n4gz24.natappfree.cc']
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition

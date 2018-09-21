@@ -23,5 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('testdb', testdb),
     path('tables', firstapp.views.get_table),
-    
+    path('form',firstapp.views.form_test),
+	path('postform',firstapp.views.post_form)
 ]
